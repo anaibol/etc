@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+if [ "$VCS" = git ] && [ -d .git ]; then
+  cd /etc/
+  git push origin master
+fi

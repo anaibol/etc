@@ -1,0 +1,2 @@
+"current_name";"default_name"
+"06_grub-customizer_menu_color_helper";"6_grub-customizer_menu_color_helper"

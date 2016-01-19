@@ -1,0 +1,28 @@
+This is a revocation certificate for the OpenPGP key:
+
+pub  rsa2048/ABA01F54 2015-08-21
+      Key fingerprint = 1BD0 48D5 4E9D 46DC FA53  AB4D B060 4DAB ABA0 1F54
+uid                  Pacman Keyring Master Key <pacman@localhost>
+
+Use it to revoke this key in case of a compromise or loss of
+the secret key.  However, if the secret key is still accessible,
+it is better to generate a new revocation certificate and give
+a reason for the revocation.
+
+To avoid an accidental use of this file, a colon has been inserted
+before the 5 dashes below.  Remove this colon with a text editor
+before making use of this revocation certificate.
+
+:-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v2
+Comment: This is a revocation certificate
+
+iQEfBCABCAAJBQJV1v8iAh0AAAoJELBgTauroB9UNcgH/2HvZaTr3T/K5NOowIsV
+A9nrYu+P9V5LxXEZ8OTw7YdvuKrTFTldiTzVAGqki3ttoQMbJKDjOnKCw7w4L9zN
+LEG7VsWhBEyG42Tifi/ldr5GZAcp/3Y8kmfiNSDuWqX7YeCdF3mrqs8lm2Lh8TmO
+icCs9Zy6kDlrTm1CA6dx2t/7lRCBNp/Wj08z4H7giGNYwsU8PL34vwETZJo12Zxs
+FDmtgVGchzo0AOgT5kM+WTZscu8UfGRdYbplbiDWllM5AVhiUcktYo33j7EjJ5iZ
+85FmC4FdXj3M6Iw6NocWiVI3JPX89LVbZdPYrk9Svf6DPTCxJSmQ1O3yWPowEu7+
+l58=
+=PBSM
+-----END PGP PUBLIC KEY BLOCK-----
