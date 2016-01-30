@@ -17,7 +17,7 @@ systemd-journal-upload:x:998:998:systemd Journal Upload:/:/sbin/nologin
 avahi:x:84:84:avahi:/:/bin/nologin
 polkitd:x:102:102:Policy Kit Daemon:/:/usr/bin/nologin
 colord:x:124:124::/var/lib/colord:/bin/false
-anaibol:x:1000:1000::/home/anaibol:/bin/zsh
+anaibol:x:1000:1000::/home/anaibol:/bin/bash
 rtkit:x:133:133:RealtimeKit:/proc:/bin/false
 git:x:997:997:git daemon user:/:/bin/bash
 mongodb:x:996:2::/var/lib/mongodb:/bin/bash
