@@ -54,3 +54,5 @@ docker:!!::
 plugdev:!::
 mysql:!::
 plex:!::
+redis:!::
+sdkusers:!::

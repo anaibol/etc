@@ -54,3 +54,5 @@ docker:x:995:
 plugdev:x:994:
 mysql:x:89:
 plex:x:421:
+redis:x:993:
+sdkusers:x:1001:
