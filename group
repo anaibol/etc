@@ -56,3 +56,4 @@ mysql:x:89:
 plex:x:421:
 redis:x:993:
 sdkusers:x:1001:anaibol
+lightdm:x:620:
