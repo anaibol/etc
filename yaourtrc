@@ -35,7 +35,7 @@
 #AURUSEGIT=0
 
 # Build
-#EXPORT=0           # Export to 1: EXPORTDIR or PKGDEST
+EXPORT=2           # Export to 1: EXPORTDIR or PKGDEST
                     # 2: pacman cache (as root)
 #EXPORTSRC=0        # Need EXPORT>0 to be used
 #EXPORTDIR=""       # If empty, use makepkg's connfiguration (see makepkg.conf)
