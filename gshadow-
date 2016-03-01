@@ -57,3 +57,4 @@ plex:!::
 redis:!::
 sdkusers:!::anaibol
 lightdm:!::
+systemd-coredump:!!::
