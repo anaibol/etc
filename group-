@@ -48,7 +48,7 @@ colord:x:124:
 anaibol:x:1000:
 rtkit:x:133:
 git:x:997:
-adbusers:x:996:
+adbusers:x:996:anaibol
 vboxusers:x:108:
 docker:x:995:
 plugdev:x:994:
