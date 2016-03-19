@@ -7615,8 +7615,8 @@ macbak           4181/tcp
 macbak           4181/udp
 pcptcpservice    4182/tcp
 pcptcpservice    4182/udp
-gmmp             4183/tcp
-gmmp             4183/udp
+cyborgnet        4183/tcp
+cyborgnet        4183/udp
 universe-suite   4184/tcp
 universe-suite   4184/udp
 wcpp             4185/tcp
@@ -7682,6 +7682,9 @@ ktickets-rest    4331/tcp
 ahsp             4333/tcp
 ahsp             4333/udp
 ahsp             4333/sctp
+netconf-ch-ssh   4334/tcp
+netconf-ch-tls   4335/tcp
+restconf-ch-tls  4336/tcp
 gaia             4340/tcp
 gaia             4340/udp
 lisp-data        4341/tcp
@@ -7783,6 +7786,11 @@ smallchat        4412/udp
 avi-nms          4413/tcp
 avi-nms-disc     4413/udp
 updog            4414/tcp
+brcd-vr-req      4415/tcp
+pjj-player       4416/tcp
+pjj-player-disc  4416/udp
+workflowdir      4417/tcp
+axysbridge       4418/udp
 netrockey6       4425/tcp
 netrockey6       4425/udp
 beacon-port-2    4426/tcp
@@ -7917,6 +7925,7 @@ mtsserver        4602/tcp
 menandmice-upg   4603/tcp
 irp              4604/tcp
 sixchat          4605/tcp
+ventoso          4621/udp
 playsta2-app     4658/tcp
 playsta2-app     4658/udp
 playsta2-lob     4659/tcp
@@ -8317,6 +8326,7 @@ actifio-c2c      5103/tcp
 tinymessage      5104/udp
 hughes-ap        5105/udp
 actifioudsagent  5106/tcp
+actifioreplic    5107/tcp
 taep-as-svc      5111/tcp
 taep-as-svc      5111/udp
 pm-cmdsvr        5112/tcp
@@ -8651,6 +8661,7 @@ personal-agent   5555/udp
 freeciv          5556/tcp
 freeciv          5556/udp
 farenet          5557/tcp
+hpe-dp-bura      5565/tcp
 westec-connect   5566/tcp
 dof-dps-mc-sec   5567/tcp
 dof-dps-mc-sec   5567/udp
@@ -9370,6 +9381,7 @@ iwg1             7071/udp
 martalk          7073/tcp
 empowerid        7080/tcp
 empowerid        7080/udp
+zixi-transport   7088/udp
 jdp-disc         7095/udp
 lazy-ptop        7099/tcp
 lazy-ptop        7099/udp
@@ -9413,6 +9425,8 @@ fodms            7200/tcp
 fodms            7200/udp
 dlip             7201/tcp
 dlip             7201/udp
+PS-Server        7215/tcp
+PS-Capture-Pro   7216/tcp
 ramp             7227/tcp
 ramp             7227/udp
 citrixupp        7228/tcp
@@ -9533,6 +9547,8 @@ coherence        7574/tcp
 coherence-disc   7574/udp
 sun-lm           7588/tcp
 sun-lm           7588/udp
+mipi-debug       7606/tcp
+mipi-debug       7606/udp
 indi             7624/tcp
 indi             7624/udp
 simco            7626/tcp
@@ -9597,6 +9613,7 @@ raqmon-pdu       7744/tcp
 raqmon-pdu       7744/udp
 prgp             7747/tcp
 prgp             7747/udp
+inetfs           7775/tcp
 cbt              7777/tcp
 cbt              7777/udp
 interwise        7778/tcp
@@ -9785,6 +9802,7 @@ vmware-fdm       8182/udp
 proremote        8183/tcp
 itach            8184/tcp
 itach            8184/udp
+gcp-rphy         8190/tcp
 limnerpressure   8191/tcp
 spytechphone     8192/tcp
 spytechphone     8192/udp
@@ -9811,12 +9829,16 @@ lm-webwatcher    8208/tcp
 lm-webwatcher    8208/udp
 rexecj           8230/tcp
 rexecj           8230/udp
+hncp-udp-port    8231/udp
+hncp-dtls-port   8232/udp
 synapse-nhttps   8243/tcp
 synapse-nhttps   8243/udp
 pando-sec        8276/tcp
 pando-sec        8276/udp
 synapse-nhttp    8280/tcp
 synapse-nhttp    8280/udp
+libelle          8282/tcp
+libelle-disc     8282/udp
 blp3             8292/tcp
 blp3             8292/udp
 hiperscan-id     8293/tcp
@@ -11129,6 +11151,7 @@ slmap           36423/sctp
 nq-ap           36424/sctp
 m2ap            36443/sctp
 m3ap            36444/sctp
+xw-control      36462/sctp
 febooti-aw      36524/tcp
 observium-agent 36602/tcp
 mapx            36700/tcp
@@ -11156,6 +11179,7 @@ turbonote-1     39681/tcp
 turbonote-1     39681/udp
 safetynetp      40000/tcp
 safetynetp      40000/udp
+k-patentssensor 40023/udp
 sptx            40404/tcp
 cscp            40841/tcp
 cscp            40841/udp
@@ -11227,6 +11251,7 @@ qdb2service     45825/tcp
 qdb2service     45825/udp
 ssr-servermgr   45966/tcp
 ssr-servermgr   45966/udp
+inedo           46336/tcp
 spremotetablet  46998/tcp
 mediabox        46999/tcp
 mediabox        46999/udp
