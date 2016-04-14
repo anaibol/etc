@@ -25,3 +25,4 @@ mysql:x:89:89::/var/lib/mysql:/bin/false
 plex:x:421:421:Plex User:/var/lib/plex:/usr/bin/nologin
 redis:x:995:993::/var/lib/redis:/bin/false
 lightdm:x:620:620:Light Display Manager:/var/lib/lightdm:/usr/bin/nologin
+systemd-coredump:x:992:992:systemd Core Dumper:/:/sbin/nologin

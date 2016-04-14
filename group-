@@ -50,7 +50,7 @@ rtkit:x:133:
 git:x:997:
 adbusers:x:996:anaibol
 vboxusers:x:108:
-docker:x:995:
+docker:x:995:anaibol
 plugdev:x:994:
 mysql:x:89:
 plex:x:421:

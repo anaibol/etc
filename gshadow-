@@ -50,7 +50,7 @@ rtkit:!::
 git:!::
 adbusers:!::anaibol
 vboxusers:!!::
-docker:!!::
+docker:!!::anaibol
 plugdev:!::
 mysql:!::
 plex:!::
