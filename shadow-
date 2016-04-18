@@ -20,7 +20,6 @@ colord:!:16668:0:99999:7:::
 anaibol:$6$lYJk3q1E$7CrW.JwkPaSevCvwjfcZgwJBUfqfV6wzLZTOVm5dCjjnn9Rbhc2.YnDzC0YPMsoKbbjFtUulJwM9RDID3jW3Y.:16668:0:99999:7:::
 rtkit:!:16668:0:99999:7:::
 git:!:16668::::::
-mongodb:!:16670::::::
 mysql:!:16709:0:99999:7:::
 plex:!:16760:0:99999:7:::
 redis:!:16805::::::
