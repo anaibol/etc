@@ -58,3 +58,4 @@ redis:!::
 sdkusers:!::anaibol
 lightdm:!::
 systemd-coredump:!!::
+ntp:!::
