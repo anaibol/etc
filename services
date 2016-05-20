@@ -4597,8 +4597,6 @@ sybaseanywhere   2638/tcp
 sybaseanywhere   2638/udp
 aminet           2639/tcp
 aminet           2639/udp
-sai-sentlm       2640/tcp
-sai-sentlm       2640/udp
 hdl-srv          2641/tcp
 hdl-srv          2641/udp
 tragic           2642/tcp
@@ -7791,6 +7789,10 @@ pjj-player       4416/tcp
 pjj-player-disc  4416/udp
 workflowdir      4417/tcp
 axysbridge       4418/udp
+cbp              4419/tcp
+nvm-express      4420/tcp
+nvm-express      4420/udp
+scaleft          4421/tcp
 netrockey6       4425/tcp
 netrockey6       4425/udp
 beacon-port-2    4426/tcp
@@ -8613,6 +8615,8 @@ spss             5443/tcp
 spss             5443/udp
 smbdirect        5445/tcp
 smbdirect        5445/sctp
+tiepie           5450/tcp
+tiepie-disc      5450/udp
 surebox          5453/tcp
 surebox          5453/udp
 apc-5454         5454/tcp
@@ -9390,6 +9394,7 @@ font-service     7100/udp
 elcn             7101/tcp
 elcn             7101/udp
 aes-x170         7107/udp
+rothaga          7117/tcp
 virprot-lm       7121/tcp
 virprot-lm       7121/udp
 scenidm          7128/tcp
@@ -9434,6 +9439,8 @@ citrixuppg       7229/tcp
 aspcoordination  7235/udp
 display          7236/tcp
 pads             7237/tcp
+frc-hicp         7244/tcp
+frc-hicp-disc    7244/udp
 cnap             7262/tcp
 cnap             7262/udp
 watchme-7272     7272/tcp
@@ -10899,6 +10906,8 @@ inovaport6      23005/tcp
 inovaport6      23005/udp
 gntp            23053/tcp
 s102            23272/udp
+5afe-dir        23294/tcp
+5afe-disc       23294/udp
 elxmgmt         23333/tcp
 elxmgmt         23333/udp
 novar-dbase     23400/tcp
