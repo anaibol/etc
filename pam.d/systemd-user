@@ -4,4 +4,5 @@
 
 account  include system-login
 
+session  required pam_loginuid.so
 session  include system-login
