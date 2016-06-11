@@ -1,5 +1,45 @@
 #!/bin/sh
+
 exec tail -n +3 $0
 # This file provides an easy way to add custom menu entries.  Simply type the
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
+
+menuentry 'Remix OS' --class android-x86 {
+        insmod part_gpt
+        search --file --no-floppy --set=root /remix/system.img
+        linux /remix/kernel root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive CMDLINE
+        initrd /remix/initrd.img
+}
+
+menuentry "Remix OS" {
+  set root='(hd0,2)'
+  linux /remix/kernel quiet root=/dev/ram0 androidboot.hardware=remix_x86_64 acpi_sleep=s3_bios,s3_mode SRC=/
+  initrd /remix/initrd.img
+}
+
+
+# This file provides an easy way to add custom menu entries. Simply type the
+# menu entries you want to add after this comment. Be careful not to change
+# the 'exec tail' line above.
+menuentry "REMIXOS Resident mode - All your data and apps are saved" {
+# mine is at (hd0,3) , yours may be elsewhere, so adjust the next line
+set root=(hd0,3)
+# These next two lines were unnecessary for me. YMMV
+# search --set=root --label REMIXOS
+# root=/dev/sda3
+# If you didn't call your partition REMIXOS then change the next line accordingly.
+linux /remix/kernel initrd=/remix/initrd.img boot=LABEL=REMIXOS disk=LABEL=REMIXOS quiet root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive quiet SRC= DATA= CREATE_DATA_IMG=1
+initrd /remix/initrd.img
+}
+
+menuentry "REMIXOS Guest mode - NO data and apps are saved" {
+# mine is at (hd0,3) , yours may be elsewhere, so adjust the next line
+set root=(hd0,3)
+# These next two lines were unnecessary for me. YMMV
+# search --set=root --label REMIXOS
+# root=/dev/sda3
+# If you didn't call your partition REMIXOS then change the next line accordingly.
+linux /remix/kernel initrd=/remix/initrd.img boot=LABEL=REMIXOS disk=LABEL=REMIXOS quiet root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive quiet SRC= DATA= DATA_IN_MEM=1
+initrd /remix/initrd.img
+}
