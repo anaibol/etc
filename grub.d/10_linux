@@ -21,7 +21,7 @@ prefix="/usr"
 exec_prefix="/usr"
 datarootdir="/usr/share"
 
-. "${datarootdir}/grub/grub-mkconfig_lib"
+. "$pkgdatadir/grub-mkconfig_lib"
 
 export TEXTDOMAIN=grub
 export TEXTDOMAINDIR="${datarootdir}/locale"
@@ -43,9 +43,11 @@ case ${GRUB_DEVICE} in
   ;;
 esac
 
+# btrfs may reside on multiple devices. We cannot pass them as value of root= parameter
+# and mounting btrfs requires user space scanning, so force UUID in this case.
 if [ "x${GRUB_DEVICE_UUID}" = "x" ] || [ "x${GRUB_DISABLE_LINUX_UUID}" = "xtrue" ] \
     || ! test -e "/dev/disk/by-uuid/${GRUB_DEVICE_UUID}" \
-    || uses_abstraction "${GRUB_DEVICE}" lvm; then
+    || test -e "${GRUB_DEVICE}" && uses_abstraction "${GRUB_DEVICE}" lvm; then
   LINUX_ROOT_DEVICE=${GRUB_DEVICE}
 else
   LINUX_ROOT_DEVICE=UUID=${GRUB_DEVICE_UUID}
@@ -64,12 +66,6 @@ case x"$GRUB_FS" in
 	LINUX_ROOT_DEVICE="ZFS=${rpool}${bootfs}"
 	;;
 esac
-
-intel_ucode=
-if test -e "/boot/intel-ucode.img" ; then
-    gettext_printf "Found Intel Microcode image\n" >&2
-    intel_ucode="$(make_system_path_relative_to_its_root /boot/intel-ucode.img)"
-fi
 
 title_correction_code=
 
@@ -142,10 +138,12 @@ EOF
   if test -n "${initrd}" ; then
     # TRANSLATORS: ramdisk isn't identifier. Should be translated.
     message="$(gettext_printf "Loading initial ramdisk ...")"
-    sed "s/^/$submenu_indentation/" << EOF
-	echo	'$(echo "$message" | grub_quote)'
-	initrd	${intel_ucode} ${rel_dirname}/${initrd}
-EOF
+    printf '	%s\n' "echo	'$(echo "$message" | grub_quote)'" | sed "s/^/$submenu_indentation/"
+    printf '	%s ' 'initrd' | sed "s/^/$submenu_indentation/"
+    for i in ${initrd}; do
+	printf ' %s/%s' "${rel_dirname}" "${i}"
+    done
+    printf '\n'
   fi
   sed "s/^/$submenu_indentation/" << EOF
 }
@@ -155,13 +153,15 @@ EOF
 machine=`uname -m`
 case "x$machine" in
     xi?86 | xx86_64)
-	list=`for i in /boot/vmlinuz-* /vmlinuz-* /boot/kernel-* ; do
-                  if grub_file_is_not_garbage "$i" ; then echo -n "$i " ; fi
-              done` ;;
+	list=
+	for i in /boot/vmlinuz-* /vmlinuz-* /boot/kernel-* ; do
+	    if grub_file_is_not_garbage "$i" ; then list="$list $i" ; fi
+	done ;;
     *) 
-	list=`for i in /boot/vmlinuz-* /boot/vmlinux-* /vmlinuz-* /vmlinux-* /boot/kernel-* ; do
-                  if grub_file_is_not_garbage "$i" ; then echo -n "$i " ; fi
-	     done` ;;
+	list=
+	for i in /boot/vmlinuz-* /boot/vmlinux-* /vmlinuz-* /vmlinux-* /boot/kernel-* ; do
+                  if grub_file_is_not_garbage "$i" ; then list="$list $i" ; fi
+	done ;;
 esac
 
 case "$machine" in
@@ -193,6 +193,11 @@ while [ "x$list" != "x" ] ; do
   linux_root_device_thisversion="${LINUX_ROOT_DEVICE}"
 
   initrd=
+  for i in intel-ucode.img; do
+    if test -e "${dirname}/${i}" ; then
+      initrd+=" ${i}"
+    fi
+  done
   for i in "initrd.img-${version}" "initrd-${version}.img" "initrd-${version}.gz" \
 	   "initrd-${version}" "initramfs-${version}.img" \
 	   "initrd.img-${alt_version}" "initrd-${alt_version}.img" \
@@ -202,7 +207,7 @@ while [ "x$list" != "x" ] ; do
 	   "initramfs-genkernel-${GENKERNEL_ARCH}-${version}" \
 	   "initramfs-genkernel-${GENKERNEL_ARCH}-${alt_version}"; do
     if test -e "${dirname}/${i}" ; then
-      initrd="$i"
+      initrd+=" $i"
       break
     fi
   done
@@ -221,7 +226,7 @@ while [ "x$list" != "x" ] ; do
   fi
 
   if test -n "${initrd}" ; then
-    gettext_printf "Found initrd image: %s\n" "${dirname}/${initrd}" >&2
+    gettext_printf "Found initrd image(s) in %s:%s\n" "${dirname}" "${initrd}" >&2
   elif test -z "${initramfs}" ; then
     # "UUID=" and "ZFS=" magic is parsed by initrd or initramfs.  Since there's
     # no initrd or builtin initramfs, it can't work here.
@@ -261,7 +266,7 @@ while [ "x$list" != "x" ] ; do
                 "single ${GRUB_CMDLINE_LINUX}"
   fi
 
-  list=`echo $list | tr ' ' '\n' | grep -vx $linux | tr '\n' ' '`
+  list=`echo $list | tr ' ' '\n' | fgrep -vx "$linux" | tr '\n' ' '`
 done
 
 # If at least one kernel was found, then we need to
