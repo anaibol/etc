@@ -4,17 +4,17 @@
 		<dir name="gstreamer">
 			<dir name="0.10">
 				<dir name="default">
-					<entry name="visualization" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/visualization"/>
-					<entry name="videosrc" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/videosrc"/>
-					<entry name="audiosrc_description" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/audiosrc_description"/>
-					<entry name="audiosrc" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/audiosrc"/>
-					<entry name="videosink" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/videosink"/>
-					<entry name="chataudiosink_description" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/chataudiosink_description"/>
-					<entry name="chataudiosink" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/chataudiosink"/>
-					<entry name="musicaudiosink_description" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/musicaudiosink_description"/>
-					<entry name="musicaudiosink" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/musicaudiosink"/>
-					<entry name="audiosink_description" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/audiosink_description"/>
-					<entry name="audiosink" mtime="1469006776" schema="/schemas/system/gstreamer/0.10/default/audiosink"/>
+					<entry name="visualization" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/visualization"/>
+					<entry name="videosrc" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/videosrc"/>
+					<entry name="audiosrc_description" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/audiosrc_description"/>
+					<entry name="audiosrc" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/audiosrc"/>
+					<entry name="videosink" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/videosink"/>
+					<entry name="chataudiosink_description" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/chataudiosink_description"/>
+					<entry name="chataudiosink" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/chataudiosink"/>
+					<entry name="musicaudiosink_description" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/musicaudiosink_description"/>
+					<entry name="musicaudiosink" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/musicaudiosink"/>
+					<entry name="audiosink_description" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/audiosink_description"/>
+					<entry name="audiosink" mtime="1470663931" schema="/schemas/system/gstreamer/0.10/default/audiosink"/>
 				</dir>
 			</dir>
 		</dir>
@@ -268,7 +268,7 @@
 			<dir name="gstreamer">
 				<dir name="0.10">
 					<dir name="default">
-						<entry name="visualization" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="visualization" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="default GStreamer visualization plugin">
 								<default type="string">
 									<stringvalue>goom</stringvalue>
@@ -276,7 +276,7 @@
 								<longdesc>GStreamer can put visualization plugins in a pipeline to transform audio stream in video frames. Default is goom but more visualization plugins will be ported soon. The visualization plugin can be a partial pipeline instead of just one element.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="videosrc" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="videosrc" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="default GStreamer video source">
 								<default type="string">
 									<stringvalue>v4l2src</stringvalue>
@@ -284,7 +284,7 @@
 								<longdesc>GStreamer can record video from any number of input elements.  Some possible choices are v4lsrc and videotestsrc. The video source can be a partial pipeline instead of just one element.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="audiosrc_description" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="audiosrc_description" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="description for default GStreamer audiosrc">
 								<default type="string">
 									<stringvalue>Default</stringvalue>
@@ -292,7 +292,7 @@
 								<longdesc>Describes the selected input element.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="audiosrc" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="audiosrc" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="default GStreamer audio source">
 								<default type="string">
 									<stringvalue>alsasrc</stringvalue>
@@ -300,7 +300,7 @@
 								<longdesc>GStreamer can record audio using any number of input elements.  Some possible choices are osssrc, esdsrc and alsasrc.  The audio source can be a partial pipeline instead of just one element.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="videosink" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="videosink" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="default GStreamer videosink">
 								<default type="string">
 									<stringvalue>autovideosink</stringvalue>
@@ -308,7 +308,7 @@
 								<longdesc>GStreamer can play video using any number of output elements.  Some possible choices are xvimagesink, ximagesink, sdlvideosink and aasink.  The videosink can be a partial pipeline instead of just one element.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="chataudiosink_description" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="chataudiosink_description" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="description for GStreamer audiosink for Audio/Video Conferencing">
 								<default type="string">
 									<stringvalue>Default</stringvalue>
@@ -316,7 +316,7 @@
 								<longdesc>Describes the selected output element for Audio/Video Conferencing.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="chataudiosink" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="chataudiosink" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="GStreamer audiosink for Audio/Video Conferencing">
 								<default type="string">
 									<stringvalue>autoaudiosink</stringvalue>
@@ -324,7 +324,7 @@
 								<longdesc>GStreamer can play audio using any number of output elements.  Some possible choices are osssink, esdsink and alsasink.  The audiosink can be a partial pipeline instead of just one element.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="musicaudiosink_description" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="musicaudiosink_description" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="description for GStreamer audiosink for Music and Movies">
 								<default type="string">
 									<stringvalue>Default</stringvalue>
@@ -332,7 +332,7 @@
 								<longdesc>Describes the selected output element for Music and Movies.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="musicaudiosink" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="musicaudiosink" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="GStreamer audiosink for Music and Movies">
 								<default type="string">
 									<stringvalue>autoaudiosink</stringvalue>
@@ -340,7 +340,7 @@
 								<longdesc>GStreamer can play audio using any number of output elements.  Some possible choices are osssink, esdsink and alsasink.  The audiosink can be a partial pipeline instead of just one element.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="audiosink_description" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="audiosink_description" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="description for default GStreamer audiosink">
 								<default type="string">
 									<stringvalue>Default</stringvalue>
@@ -348,7 +348,7 @@
 								<longdesc>Describes the selected output element.</longdesc>
 							</local_schema>
 						</entry>
-						<entry name="audiosink" mtime="1469006776" type="schema" stype="string" owner="gstreamer">
+						<entry name="audiosink" mtime="1470663931" type="schema" stype="string" owner="gstreamer">
 							<local_schema locale="C" short_desc="default GStreamer audiosink">
 								<default type="string">
 									<stringvalue>autoaudiosink</stringvalue>
@@ -1584,7 +1584,7 @@
 		</dir>
 		<dir name="apps">
 			<dir name="gksu">
-				<entry name="save-keyring" mtime="1470314051" type="schema" stype="string" owner="gksu" gettext_domain="libgksu">
+				<entry name="save-keyring" mtime="1470314051" type="schema" stype="string" owner="gksu">
 					<local_schema locale="C" short_desc="Keyring to which passwords will be saved">
 						<default type="string">
 							<stringvalue>session</stringvalue>
@@ -1596,7 +1596,7 @@
 	</longdesc>
 					</local_schema>
 				</entry>
-				<entry name="save-to-keyring" mtime="1470314051" type="schema" stype="bool" owner="gksu" gettext_domain="libgksu">
+				<entry name="save-to-keyring" mtime="1470314051" type="schema" stype="bool" owner="gksu">
 					<local_schema locale="C" short_desc="Save password to gnome-keyring">
 						<default type="bool" value="true"/>
 						<longdesc>
@@ -1605,7 +1605,7 @@
 	</longdesc>
 					</local_schema>
 				</entry>
-				<entry name="display-no-pass-info" mtime="1470314051" type="schema" stype="bool" owner="gksu" gettext_domain="libgksu">
+				<entry name="display-no-pass-info" mtime="1470314051" type="schema" stype="bool" owner="gksu">
 					<local_schema locale="C" short_desc="Display information message when no password is needed">
 						<default type="bool" value="true"/>
 						<longdesc>
@@ -1615,7 +1615,7 @@
 	</longdesc>
 					</local_schema>
 				</entry>
-				<entry name="prompt" mtime="1470314051" type="schema" stype="bool" owner="gksu" gettext_domain="libgksu">
+				<entry name="prompt" mtime="1470314051" type="schema" stype="bool" owner="gksu">
 					<local_schema locale="C" short_desc="Prompt for grabbing">
 						<default type="bool" value="false"/>
 						<longdesc>
@@ -1625,7 +1625,7 @@
 	</longdesc>
 					</local_schema>
 				</entry>
-				<entry name="sudo-mode" mtime="1470314051" type="schema" stype="bool" owner="gksu" gettext_domain="libgksu">
+				<entry name="sudo-mode" mtime="1470314051" type="schema" stype="bool" owner="gksu">
 					<local_schema locale="C" short_desc="Sudo mode">
 						<default type="bool" value="false"/>
 						<longdesc>
@@ -1635,7 +1635,7 @@
 	</longdesc>
 					</local_schema>
 				</entry>
-				<entry name="force-grab" mtime="1470314051" type="schema" stype="bool" owner="gksu" gettext_domain="libgksu">
+				<entry name="force-grab" mtime="1470314051" type="schema" stype="bool" owner="gksu">
 					<local_schema locale="C" short_desc="Force keyboard and mouse grab">
 						<default type="bool" value="false"/>
 						<longdesc>
@@ -1644,7 +1644,7 @@
 	</longdesc>
 					</local_schema>
 				</entry>
-				<entry name="disable-grab" mtime="1470314051" type="schema" stype="bool" owner="gksu" gettext_domain="libgksu">
+				<entry name="disable-grab" mtime="1470314051" type="schema" stype="bool" owner="gksu">
 					<local_schema locale="C" short_desc="Disable keyboard and mouse grab">
 						<default type="bool" value="false"/>
 						<longdesc>
