@@ -38,7 +38,7 @@
 		<name xml:lang="ja">画像</name>
 		<name xml:lang="kk">Сурет</name>
 		<name xml:lang="ko">그림</name>
-		<name xml:lang="lt">Atvaizdas</name>
+		<name xml:lang="lt">Paveikslas</name>
 		<name xml:lang="lv">Attēls</name>
 		<name xml:lang="ms">Imej</name>
 		<name xml:lang="nb">Bilde</name>
@@ -81,7 +81,7 @@
 				<name xml:lang="fi">Muokkaa GIMP:ssä</name>
 				<name xml:lang="fr">Éditer avec Gimp</name>
 				<name xml:lang="gl">Editar co Gimp</name>
-				<name xml:lang="he">עריכה באמצעות Gimp</name>
+				<name xml:lang="he">ערוך באמצעות Gimp</name>
 				<name xml:lang="hr">Uredi pomoću Gimp-a</name>
 				<name xml:lang="hu">Szerkesztés a Gimppel</name>
 				<name xml:lang="id">Sunting dengan Gimp</name>
@@ -120,7 +120,7 @@
 				<name xml:lang="ar">عرض مع ريستريتو</name>
 				<name xml:lang="ast">Ver con Ristretto</name>
 				<name xml:lang="bg">Преглед с Ristretto</name>
-				<name xml:lang="ca">Mostra amb Ristretto</name>
+				<name xml:lang="ca">Visualitza amb Ristretto</name>
 				<name xml:lang="cs">Zobrazit v aplikaci Ristretto</name>
 				<name xml:lang="da">Vis med Ristretto</name>
 				<name xml:lang="de">Mit Ristretto betrachten</name>
@@ -132,7 +132,7 @@
 				<name xml:lang="fi">Näytä Ristrettolla</name>
 				<name xml:lang="fr">Ouvrir avec Ristretto</name>
 				<name xml:lang="gl">Ver con Ristretto</name>
-				<name xml:lang="he">צפייה באמצעות Ristretto</name>
+				<name xml:lang="he">צפה באמצעות Ristretto</name>
 				<name xml:lang="hr">Pogledaj pomoću Ristretto-a</name>
 				<name xml:lang="hu">Megjelenítés a Ristrettoval</name>
 				<name xml:lang="id">Tampilkan dengan Ristretto</name>
@@ -197,6 +197,7 @@
 		<name xml:lang="lt">Klaidos</name>
 		<name xml:lang="lv">Bugz</name>
 		<name xml:lang="ms">Bugz</name>
+		<name xml:lang="nb">Bugz</name>
 		<name xml:lang="nl">Bugz</name>
 		<name xml:lang="oc">Bug</name>
 		<name xml:lang="pl">Błędy</name>
@@ -204,6 +205,7 @@
 		<name xml:lang="pt_BR">Bugz</name>
 		<name xml:lang="ru">Ошибки</name>
 		<name xml:lang="sk">Chyby</name>
+		<name xml:lang="sl">Hrošči</name>
 		<name xml:lang="sr">Грешке</name>
 		<name xml:lang="sv">Bugz</name>
 		<name xml:lang="th">บั๊ก</name>
@@ -233,7 +235,7 @@
 				<name xml:lang="fi">Xfce:n vikailmoitus</name>
 				<name xml:lang="fr">Bogue Xfce</name>
 				<name xml:lang="gl">Erro de Xfce</name>
-				<name xml:lang="he">שגיאה אצל Xfce</name>
+				<name xml:lang="he">באג Xfce</name>
 				<name xml:lang="hr">Xfce pogreška</name>
 				<name xml:lang="hu">Xfce hiba</name>
 				<name xml:lang="id">Kutu Xfce</name>
@@ -284,7 +286,7 @@
 				<name xml:lang="fi">GNOME-vikailmoitus</name>
 				<name xml:lang="fr">Bogue GNOME</name>
 				<name xml:lang="gl">Erro de GNOME</name>
-				<name xml:lang="he">שגיאה אצל GNOME</name>
+				<name xml:lang="he">באג GNOME</name>
 				<name xml:lang="hr">GNOME pogreška</name>
 				<name xml:lang="hu">GNOME hiba</name>
 				<name xml:lang="id">Kutu GNOME</name>
@@ -328,7 +330,7 @@
 		<name xml:lang="ca">URL completa</name>
 		<name xml:lang="cs">Dlouhá adresa URL</name>
 		<name xml:lang="da">Lang URL</name>
-		<name xml:lang="de">Lange Webadresse</name>
+		<name xml:lang="de">Lange Netzadresse</name>
 		<name xml:lang="el">Μεγάλο url</name>
 		<name xml:lang="en_AU">Long URL</name>
 		<name xml:lang="en_GB">Long URL</name>
@@ -358,7 +360,7 @@
 		<name xml:lang="ru">Длинный URL</name>
 		<name xml:lang="sk">Dlhá URL</name>
 		<name xml:lang="sl">Dolg URL</name>
-		<name xml:lang="sr">Породужи адресу</name>
+		<name xml:lang="sr">Дуга адреса</name>
 		<name xml:lang="sv">Lång URL</name>
 		<name xml:lang="th">URL ยาว</name>
 		<name xml:lang="tr">Uzun URL</name>
@@ -376,10 +378,10 @@
 				<name xml:lang="ar">تقليص المسار</name>
 				<name xml:lang="ast">Acurtiar la URL</name>
 				<name xml:lang="bg">Съкращаване на адреса</name>
-				<name xml:lang="ca">Escurça la URL</name>
+				<name xml:lang="ca">Escurça l'URL</name>
 				<name xml:lang="cs">Zkrátit adresu URL</name>
 				<name xml:lang="da">Formindsk URL'en</name>
-				<name xml:lang="de">Webadresse kürzen</name>
+				<name xml:lang="de">Netzadresse kürzen</name>
 				<name xml:lang="el">Σμίκρυνση του url</name>
 				<name xml:lang="en_AU">Shrink the URL</name>
 				<name xml:lang="en_GB">Shrink the URL</name>
@@ -409,7 +411,7 @@
 				<name xml:lang="ru">Сократить URL</name>
 				<name xml:lang="sk">Skrátiť URL</name>
 				<name xml:lang="sl">Skrajšaj URL</name>
-				<name xml:lang="sr">Смањи адресу</name>
+				<name xml:lang="sr">Скрати адресу</name>
 				<name xml:lang="sv">Korta ner URL:en</name>
 				<name xml:lang="th">ย่อ URL</name>
 				<name xml:lang="tr">URL'yi kısalt</name>
