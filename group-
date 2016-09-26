@@ -60,3 +60,4 @@ lightdm:x:620:
 systemd-coredump:x:992:
 ntp:x:87:
 haproxy:x:618:
+wireshark:x:150:
