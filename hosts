@@ -8,4 +8,5 @@
 172.17.0.2      dockerhost
 127.0.0.1       localhost local
 127.0.0.1       static.localhost        localhost
+10.0.3.2        loopnlink.local
 # End of file
