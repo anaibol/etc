@@ -9592,6 +9592,7 @@ sun-user-https   7677/udp
 pando-pub        7680/tcp
 pando-pub        7680/udp
 dmt              7683/tcp
+bolt             7687/tcp
 collaber         7689/tcp
 collaber         7689/udp
 klio             7697/tcp
@@ -10427,6 +10428,7 @@ apollo-relay    10252/udp
 eapol-relay     10253/udp
 axis-wimp-port  10260/tcp
 axis-wimp-port  10260/udp
+tile-ml         10261/tcp
 blocks          10288/tcp
 blocks          10288/udp
 cosir           10321/tcp
