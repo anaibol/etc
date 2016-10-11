@@ -60,4 +60,3 @@ lightdm:!::
 systemd-coredump:!!::
 ntp:!::
 haproxy:!::
-wireshark:!::

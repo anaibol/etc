@@ -27,3 +27,4 @@ lightdm:x:620:620:Light Display Manager:/var/lib/lightdm:/usr/bin/nologin
 systemd-coredump:x:992:992:systemd Core Dumper:/:/sbin/nologin
 ntp:x:87:87:Network Time Protocol:/var/lib/ntp:/bin/false
 mongodb:x:619:2::/var/lib/mongodb:/bin/bash
+haproxy:x:618:618::/:/usr/bin/nologin
